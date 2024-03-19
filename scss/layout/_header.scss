@@ -1,13 +1,11 @@
 header{
-    @media only screen and (max-width) {
-        
-    }
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding-top: 16px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(18px);
     z-index: 9999;
     
     nav{
@@ -53,4 +51,32 @@ header{
             }
         }
     }
+
+    .toggle_menu{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+
+    }
 }
+
+@media (prefers-color-scheme: dark){
+    header, #intro, #skills, #work, #getintouch{
+        background-color: #030712;
+        .nav{
+            a{
+
+                color: #fff;
+            }
+            button{
+                background: #111827;
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:)

@@ -36,11 +36,19 @@
         padding:32px;
         width: 896px;
         height: 288px;
+        border-radius: 12px;
         background-color: #fff;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         margin-top: 48px;
+        transition: all 0.5s ease;
+
+        &:hover{
+          transform: scale(1.03);
+        }
+
+    
 
         ul{
             width: 384px;
@@ -60,9 +68,22 @@
         }
 
 
-        img{
-            mix-blend-mode: multiply;
-        }
+        
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  #experience{
+
+    background: #111827;
+
+    .wrapper{
+
+      .card{
+        background-color: #1F2937;
+        color: #ffff;
+      }
     }
   }
 }

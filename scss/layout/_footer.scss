@@ -12,3 +12,15 @@ footer{
 
     }
 }
+
+@media (prefers-color-scheme: dark){
+    footer{
+        background: #111827;
+
+        p{
+            color: #fff;
+        }
+
+
+    }
+}

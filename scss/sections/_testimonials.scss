@@ -78,3 +78,22 @@
         }  
     }
 }
+
+@media (prefers-color-scheme: dark){
+    #testimonials{
+        background: #111827;
+
+        .wrapper{
+
+            .card{
+                background: #1F2937 !important;
+
+    
+                p, h2, a{
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}

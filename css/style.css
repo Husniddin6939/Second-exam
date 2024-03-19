@@ -38,13 +38,22 @@ footer .footer {
   font-weight: 400;
 }
 
+@media (prefers-color-scheme: dark) {
+  footer {
+    background: #111827;
+  }
+  footer p {
+    color: #fff;
+  }
+}
 header {
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding-top: 16px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(18px);
   z-index: 9999;
 }
 header nav {
@@ -84,7 +93,25 @@ header nav ul div button {
   background-color: black;
   color: #fff;
 }
+header .toggle_menu {
+  display: none;
+}
+header .sidebar {
+  display: none;
+}
 
+@media (prefers-color-scheme: dark) {
+  header, #intro, #skills, #work, #getintouch {
+    background-color: #030712;
+  }
+  header .nav a, #intro .nav a, #skills .nav a, #work .nav a, #getintouch .nav a {
+    color: #fff;
+  }
+  header .nav button, #intro .nav button, #skills .nav button, #work .nav button, #getintouch .nav button {
+    background: #111827;
+  }
+}
+@medi;
 main {
   padding-top: 68px;
 }
@@ -139,6 +166,13 @@ main #intro .wrapper .wrapper_left .social a {
 main #intro .wrapper .wrapper_right {
   position: relative;
 }
+main #intro .wrapper .wrapper_right .dark {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 40px;
+}
 main #intro .wrapper .wrapper_right .background {
   position: absolute;
   z-index: -1;
@@ -152,6 +186,11 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   transform: translateX(40px) translateY(40px) scale(0.99);
 }
 
+@media (prefers-color-scheme: dark) {
+  #intro h1, #intro p, #intro i, #intro h6 {
+    color: #fff;
+  }
+}
 #about {
   background: #F9FAFB;
   padding-top: 96px;
@@ -219,6 +258,14 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   list-style-type: disc;
 }
 
+@media (prefers-color-scheme: dark) {
+  #about {
+    background: #111827;
+  }
+  #about h3, #about ul, #about p {
+    color: #fff;
+  }
+}
 #skills {
   padding: 96px 80px;
 }
@@ -247,6 +294,14 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   grid-row-gap: 48px;
 }
 
+@media (prefers-color-scheme: dark) {
+  #skills h1 {
+    color: #fff;
+  }
+  #skills .wrapper img {
+    color: #fff;
+  }
+}
 #experience {
   background: #f9fafb;
   padding: 96px 80px;
@@ -282,11 +337,16 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   padding: 32px;
   width: 896px;
   height: 288px;
+  border-radius: 12px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 48px;
+  transition: all 0.5s ease;
+}
+#experience .wrapper .card:hover {
+  transform: scale(1.03);
 }
 #experience .wrapper .card ul {
   width: 384px;
@@ -301,10 +361,16 @@ main #intro .wrapper .wrapper_right .frontend:hover {
 #experience .wrapper .card ul h1 h1 {
   margin-bottom: 16px;
 }
-#experience .wrapper .card img {
-  mix-blend-mode: multiply;
-}
 
+@media (prefers-color-scheme: dark) {
+  #experience {
+    background: #111827;
+  }
+  #experience .wrapper .card {
+    background-color: #1F2937;
+    color: white;
+  }
+}
 #work {
   padding: 96px 80px;
 }
@@ -337,8 +403,16 @@ main #intro .wrapper .wrapper_right .frontend:hover {
 }
 .container .card {
   display: flex;
-  align-items: flex-start;
-  padding: 48px 32px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 2px 6px 15px rgba(197, 195, 195, 0.426);
+  border-radius: 12px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+.container .card:hover {
+  transform: scale(1.03);
 }
 .container .card .card-right {
   padding: 48px;
@@ -365,6 +439,17 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   color: #fff;
 }
 
+@media (prefers-color-scheme: dark) {
+  #work .card {
+    background: #1F2937;
+  }
+  #work .card h1 {
+    color: #fff;
+  }
+  #work .card p {
+    color: #6B7280;
+  }
+}
 #testimonials {
   padding: 96px 80px;
   background: #F9FAFB;
@@ -429,6 +514,17 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   font-weight: 400;
 }
 
+@media (prefers-color-scheme: dark) {
+  #testimonials {
+    background: #111827;
+  }
+  #testimonials .wrapper .card {
+    background: #1F2937 !important;
+  }
+  #testimonials .wrapper .card p, #testimonials .wrapper .card h2, #testimonials .wrapper .card a {
+    color: #fff;
+  }
+}
 #getintouch {
   padding: 96px 80px;
 }
@@ -487,4 +583,19 @@ main #intro .wrapper .wrapper_right .frontend:hover {
 #getintouch .container .socall .socal i {
   width: 36px;
   height: 36px;
+}
+
+@media (prefers-color-scheme: dark) {
+  #getintouch .container .title h1, #getintouch .container .title h4 {
+    color: #fff;
+  }
+  #getintouch .container .adress .line {
+    color: #fff;
+  }
+  #getintouch .container .adress .line a {
+    color: #fff;
+  }
+  #getintouch .container .socall h3, #getintouch .container .socall a {
+    color: #fff;
+  }
 }/*# sourceMappingURL=style.css.map */

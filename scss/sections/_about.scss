@@ -18,7 +18,7 @@
                color:rgb(13, 13, 13);
                background-color:#bbbbc5;
                padding: 4px 20px;
-               border-radius: 18px
+               border-radius: 18px;
             
         } 
        }
@@ -88,4 +88,14 @@
             
         }
 
+}
+
+@media (prefers-color-scheme: dark){
+   #about{
+      background: #111827;
+      
+     h3, ul, p{
+         color: #fff;
+      }
+   }
 }

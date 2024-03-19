@@ -66,3 +66,30 @@
     }
   }
 }
+
+@media (prefers-color-scheme: dark){
+  #getintouch{
+    .container{
+      .title{
+        
+        h1, h4,{
+          color: #fff;
+        }
+      }
+      .adress{
+        .line{
+          a{
+            color: #fff;
+          }
+          color: #fff;
+        }
+      }
+
+      .socall{
+        h3, a{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
