@@ -25,6 +25,19 @@ button {
   border: none;
 }
 
+footer {
+  background: #F9FAFB;
+  padding: 24px 532px;
+}
+footer .footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -154,7 +167,7 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   font-size: 14px;
   font-weight: 500;
   color: rgb(13, 13, 13);
-  background-color: #9d9da8;
+  background-color: #bbbbc5;
   padding: 4px 20px;
   border-radius: 18px;
 }
@@ -250,9 +263,14 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   font-size: 14px;
   font-weight: 500;
   color: rgb(13, 13, 13);
-  background-color: #aaaab4;
+  background-color: #cfcfd6;
   padding: 4px 20px;
   border-radius: 18px;
+}
+#experience .title h1 {
+  color: #4B5563;
+  font-size: 20px;
+  font-weight: 400;
 }
 #experience .wrapper {
   display: flex;
@@ -291,6 +309,11 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   padding: 96px 80px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 .container .title {
   text-align: center;
   display: flex;
@@ -303,9 +326,14 @@ main #intro .wrapper .wrapper_right .frontend:hover {
   font-size: 14px;
   font-weight: 500;
   color: rgb(13, 13, 13);
-  background-color: #aaaab4;
+  background-color: #d0d0d8;
   padding: 4px 20px;
   border-radius: 18px;
+}
+.container .title h1 {
+  color: #4B5563;
+  font-size: 20px;
+  font-weight: 400;
 }
 .container .card {
   display: flex;
@@ -314,6 +342,10 @@ main #intro .wrapper .wrapper_right .frontend:hover {
 }
 .container .card .card-right {
   padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
 }
 .container .card .versions {
   display: grid;
@@ -331,4 +363,128 @@ main #intro .wrapper .wrapper_right .frontend:hover {
 }
 .container .card .versions div p {
   color: #fff;
+}
+
+#testimonials {
+  padding: 96px 80px;
+  background: #F9FAFB;
+}
+#testimonials .container .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+#testimonials .container .title h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(13, 13, 13);
+  background-color: #aaaab4;
+  padding: 4px 20px;
+  border-radius: 18px;
+}
+#testimonials .container .title h1 {
+  color: #4B5563;
+  font-size: 20px;
+  font-weight: 400;
+}
+#testimonials .container .wrapper {
+  display: flex;
+  gap: 48px;
+}
+#testimonials .container .wrapper .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 48px 48px 96px 48px;
+  width: 375px;
+  background-color: #fff;
+  gap: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 0px grey;
+  cursor: pointer;
+}
+#testimonials .container .wrapper .card .card:hover {
+  box-shadow: 0px 0px 20px grey;
+  transition: all 0.3s ease-in-out;
+}
+#testimonials .container .wrapper .card p {
+  font-size: 16px;
+  font-weight: 400;
+}
+#testimonials .container .wrapper .card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+#testimonials .container .wrapper .card div h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#testimonials .container .wrapper .card div h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#getintouch {
+  padding: 96px 80px;
+}
+#getintouch .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#getintouch .container .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 576px;
+}
+#getintouch .container .title h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(13, 13, 13);
+  background-color: #cdcdd4;
+  padding: 4px 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+#getintouch .container .title h1 {
+  color: #4b5563;
+}
+#getintouch .container .adress {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+#getintouch .container .adress a {
+  color: #111827;
+}
+#getintouch .container .socall {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+#getintouch .container .socall h3 {
+  color: #4B5563;
+  font-size: 16px;
+  font-weight: 400;
+}
+#getintouch .container .socall .socal {
+  display: flex;
+  gap: 4px;
+}
+#getintouch .container .socall .socal i {
+  width: 36px;
+  height: 36px;
 }/*# sourceMappingURL=style.css.map */

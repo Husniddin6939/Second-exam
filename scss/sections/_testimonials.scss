@@ -1,0 +1,80 @@
+#testimonials{
+    padding: 96px 80px;
+    background: #F9FAFB;
+    
+    .container{
+        .title {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            
+        
+            h4 {
+              font-size: 14px;
+              font-weight: 500;
+              color: rgb(13, 13, 13);
+              background-color: #aaaab4;
+              padding: 4px 20px;
+              border-radius: 18px;
+            }
+
+            h1{
+                color: #4B5563;
+                font-size: 20px;
+                font-weight: 400;
+            }
+          }
+
+        .wrapper{
+
+            display: flex;
+            gap: 48px;
+
+
+            .card{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 48px 48px 96px 48px;
+                width: 375px;
+                background-color: #fff;
+                gap: 24px;
+                border-radius: 12px;
+                box-shadow: 0px 0px 5px 0px grey;
+                cursor: pointer;
+
+            .card:hover{
+                box-shadow: 0px 0px 20px grey;
+                transition: all 0.3s ease-in-out;
+                
+
+            }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 4px;
+
+                    h2{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    h4{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }  
+    }
+}

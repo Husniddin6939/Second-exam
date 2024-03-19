@@ -3,6 +3,10 @@
 }
 
 .container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     
     .title {
         text-align: center;
@@ -16,9 +20,16 @@
           font-size: 14px;
           font-weight: 500;
           color: rgb(13, 13, 13);
-          background-color: #aaaab4;
+          background-color: #d0d0d8;
           padding: 4px 20px;
           border-radius: 18px;
+        }
+
+        h1{
+            color: #4B5563;
+            font-size: 20px;
+            font-weight: 400;
+
         }
       }
 
@@ -26,13 +37,17 @@
         display: flex;
         align-items: flex-start;
         padding: 48px 32px;
-        // width: 1152px;
-        // div{
-        //     padding: 48px;
-        // }
+        // box-shadow: 5px 5px 5px gray;
+    
 
         .card-right {
             padding: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 24px;
+
+            
         }
 
         .versions{
