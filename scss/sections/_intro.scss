@@ -1,109 +1,301 @@
-main {
-  padding-top: 68px;
-  #intro {
-    padding-top: 96px;
-    padding-bottom: 96px;
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      grid-column-gap: 48px;
+// main {
+//   padding-top: 68px;
+//   #intro {
+//     padding-top: 96px;
+//     padding-bottom: 96px;
+//     .wrapper {
+//       display: flex;
+
+//       align-items: center;
+//       justify-content: space-between;
+
+//       .wrapper_left {
+//         order: 1;
+//         width: 768px;
+//         h1 {
+//           font-size: 60px;
+//           font-weight: 700;
+//           padding-bottom: 8px;
+//         }
+
+//         p {
+//           font-size: 16px;
+//           font-weight: 400;
+//           padding-bottom: 48px;
+//         }
+
+//         .location {
+//           display: flex;
+//           align-items: center;
+//           gap: 8px;
+//           padding-bottom: 8px;
+//           font-size: 16px;
+//           font-weight: 400;
+//         }
+
+//         .headdot {
+//           display: flex;
+//           align-items: center;
+//           margin-left: 4px;
+//           gap: 8px;
+//           padding-bottom: 48px;
+//           font-size: 16px;
+//           font-weight: 400;
+
+//           .dot {
+//             width: 8px;
+//             height: 8px;
+//             border-radius: 50%;
+//             background-color: green;
+//           }
+//         }
+
+//         .social {
+//           a {
+//             width: 28px;
+//             height: 28px;
+//           }
+//         }
+//       }
+
+//       .wrapper_right {
+//         order: 2;
+//         margin-bottom: 350px;
+//         position: relative;
+//         .background {
+//           position: absolute;
+//           z-index: -1;
+//           top: 40px;
+//           right: 0px;
+//           display: flex;
+//         }
+
+//         .frontend {
+//           transition: all 0.7s ease-in-out;
+//           // position: absolute;
+//           // top: 0;
+//           transform: translateX(-40px);
+//           // right: 40px;
+//           &:hover {
+//             transform: translateX(0px) translateY(40px) scale(0.97);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   #intro {
+//     .wrapper_left {
+//       width: 600px;
+//     }
+//     .frontend {
+//       transition: all 0.7s ease-in-out;
+//       position: absolute;
+//       top: 0;
+//       right: 40px;
+//       box-shadow: 40px 40px grey;
+//       &:hover {
+//         box-shadow: 0px 0px gray;
+//         transform: translateX(40px) translateY(40px) scale(0.97);
+//       }
+//     }
+
+//     h1,
+//     p,
+//     i,
+//     h6 {
+//       color: #fff;
+//     }
+//   }
+// }
+
+// @media only screen and (maxwidth: 576px) {
+
+//   #intro {
+//     .wrapper {
+//       display: flex;
+//       flex-direction: column-reverse !important;
+//       align-items: center;
+//       justify-content: center;
+//       padding-left: 50px;
+//       background-color: red;
+//       .wrapper_right {
+//         // order: 1;
+
+//         .frontend{
+//           // bottom: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+#intro {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 96px;
+
+  .container {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       .wrapper_left {
-        // width: 768px;
-        h1 {
-          font-size: 60px;
-          font-weight: 700;
-          padding-bottom: 8px;
-        }
-
-        p {
-          font-size: 16px;
-          font-weight: 400;
-          padding-bottom: 48px;
-        }
-
-        .location {
+          width: 100%;
           display: flex;
-          align-items: center;
-          gap: 8px;
-          padding-bottom: 8px;
-          font-size: 16px;
-          font-weight: 400;
-        }
+          flex-direction: column;
+          align-items: start;
+          gap: 48px;
+          padding-top: 96px;
 
-        .headdot {
-          display: flex;
-          align-items: center;
-          margin-left: 4px;
-          gap: 8px;
-          padding-bottom: 48px;
-          font-size: 16px;
-          font-weight: 400;
+          &-txt {
+              width: 768px;
 
-          .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: green;
+              h1 {
+                  font-weight: 700;
+                  font-size: 60px;
+                  color: $color-darc;
+              }
+
+              p {
+                  padding-top: 8px;
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: $color-gray;
+              }
           }
-        }
 
-        .social {
-          a {
-            width: 28px;
-            height: 28px;
+          .location {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 8px;
+
+              small {
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+              }
           }
-        }
       }
 
       .wrapper_right {
-        position: relative;
-        z-index: 5;
-        .background {
-          position: absolute;
-          z-index: -1;
-          top: 40px;
-          right: 0px;
-        }
+          position: relative;
 
-        .frontend {
-          transition: all 0.7s ease-in-out;
-          position: absolute;
-          top: 0;
-          right: 40px;
-          &:hover {
-            transform: translateX(40px) translateY(40px) scale(0.97);
+          .mukhriddin {
+              margin-right: 40px;
+              transition: all 0.8s ease-in-out;
+              position: relative;
+              z-index: 2;
+              // box-shadow: 40px 40px $color-gray;
+
+              &:hover {
+                  transform: translateY(40px) translateX(40px) scale(0.97);
+                  // box-shadow: 0px 0px $color-gray;
+              }
           }
-        }
 
-        
-          
-        
+          .mukhriddin-bg {
+              position: absolute;
+              left: 40px;
+              z-index: 0;
+              top: 40px;
+              // display: none;
+          }
       }
-    }
   }
 }
 
 @media (prefers-color-scheme: dark) {
   #intro {
+      background-color: $bg-darc;
 
-    .frontend {
-      transition: all 0.7s ease-in-out;
-      position: absolute;
-      top: 0;
-      right: 40px;
-      box-shadow: 40px 40px grey;
-      &:hover {
-        box-shadow: 0px 0px gray;
-        transform: translateX(40px) translateY(40px) scale(0.97);
+      .wrapper_left {
+
+          .wrapper_left-txt {
+
+              h1,
+              p {
+                  color: $color-light;
+              }
+          }
+
+          .location {
+
+              small {
+                  color: $color-light;
+
+              }
+          }
+
+          .icons {
+              a {
+                  img {
+                      background-color: $color-light;
+                      border-radius: 8px;
+                      transition: all 0.3s ease;
+                  }
+
+                  &:hover img {
+                      opacity: 0.8;
+                  }
+              }
+          }
+
       }
-    }
 
-    h1,
-    p,
-    i,
-    h6 {
-      color: #fff;
-    }
+      .wrapper_right {
+          z-index: 3;
+
+      }
+
+      .mukhriddin {
+          margin-right: 40px;
+          transition: all 0.8s ease-in-out;
+          position: relative;
+          z-index: 2;
+          box-shadow: 40px 40px $color-gray;
+
+          &:hover {
+              transform: translateY(40px) translateX(40px) scale(0.97);
+              box-shadow: 0px 0px $color-gray;
+          }
+      }
+
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  #intro {
+      .container {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+          padding-left: 50px;
+
+          .wrapper_right {
+              .mukhriddin {
+                  left: 40px;
+                  transform: scale(0.9);
+                  top: 20px;
+                  // margin-right: -20px;
+                  transition: all 0.8s ease-in-out;
+                  position: relative;
+                  z-index: 2;
+
+                  &:hover {
+                      transform: scale(0.8);
+                      top: 40px;
+                  }
+              }
+          }
+      }
   }
 }

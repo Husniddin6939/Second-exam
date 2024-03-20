@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 48px;
 
     .title {
       text-align: center;
@@ -91,5 +93,14 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-widht: 576px){
+  #getintouch {
+      .container {
+        display: flex;
+      flex-direction: column;
+      }
   }
 }

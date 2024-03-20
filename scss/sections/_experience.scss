@@ -41,7 +41,7 @@
     .card{
         padding:32px;
         width: 896px;
-        height: 288px;
+        // height: 288px;
         border-radius: 12px;
         background-color: #fff;
         display: flex;
@@ -89,6 +89,19 @@
       .card{
         background-color: #1F2937;
         color: #ffff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #experience {
+    .wrapper {
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 32px !important;
       }
     }
   }

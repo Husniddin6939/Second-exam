@@ -24,10 +24,8 @@
        }
 
          .wrapper{
-             padding-top: 76px;
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-             grid-column-gap: 48px;
+             display: flex;
+             align-items: center;
              gap: 48px;
 
              .wrapper_left{
@@ -99,5 +97,27 @@
      h3, ul, p{
          color: #fff;
       }
+   }
+}
+@media only screen and (max-width: 576px){
+   #about{
+      padding: 64px 16px;
+
+      .wrapper{
+         padding: 0 16px;
+         display: flex;
+         flex-direction: column;
+         .wrapper_left{
+            order: 2;
+
+         }
+
+         .wrapper_right{
+           padding: 0 16px;
+         }
+
+      }
+
+
    }
 }
