@@ -21,10 +21,22 @@
   .wrapper {
     padding-top: 48px;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(auto-fit,  minmax(70px,1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 86px;
     grid-row-gap: 48px;
+
+    img{
+      padding: 10px 10px;
+      border-radius: 7px;
+      overflow: hidden;
+      box-shadow: 0px 0px 5px grey;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      &:hover{
+        transform:scale(1.1);
+      }
+    }
   }
 }
 
@@ -41,4 +53,8 @@
     }
 
   }
+}
+
+@media only screen and (max-width: 769px){
+  
 }

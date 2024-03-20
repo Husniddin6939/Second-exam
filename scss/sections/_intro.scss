@@ -1,110 +1,109 @@
-main{
-    padding-top: 68px;
-    #intro{
-        padding-top: 96px;
-        padding-bottom: 96px;
-        .wrapper{
-            display: flex;
-            gap: 48px;
-            
-        .wrapper_left{
-            width: 768px;
-            h1{
-                font-size: 60px;
-                font-weight: 700;
-                padding-bottom: 8px;
-            }
-            
-            p{
-                font-size: 16px;
-                font-weight: 400;
-                padding-bottom: 48px;
-            }
+main {
+  padding-top: 68px;
+  #intro {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-column-gap: 48px;
 
-            .location{
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                padding-bottom: 8px;
-                font-size: 16px;
-                font-weight: 400;
-            }
-
-            .headdot{
-                display: flex;
-                align-items: center;
-                margin-left: 4px;
-                gap: 8px;
-                padding-bottom: 48px;
-                font-size: 16px;
-                font-weight: 400;
-
-                .dot{
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background-color: green;
-                }      
-            }
-
-            .social{
-               a{
-                width: 28px;
-                height: 28px;
-                
-               }
-            }
+      .wrapper_left {
+        // width: 768px;
+        h1 {
+          font-size: 60px;
+          font-weight: 700;
+          padding-bottom: 8px;
         }
 
-        .wrapper_right{
-            position: relative;
-
-            .dark{
-                display:none;
-                position: absolute;
-                z-index: -1;
-                top: 40px;
-                left: 40px;
-            }
-
-            .background{
-                position: absolute;
-                z-index: -1;
-                top: 40px;
-                left: 40px;
-                
-            }
-
-            .frontend{
-                transition: all 0.7s ease-in-out;
-            }
-
-            .frontend:hover{
-                transform:translateX(40px) translateY(40px) scale(0.99);
-
-            }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          padding-bottom: 48px;
         }
+
+        .location {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding-bottom: 8px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .headdot {
+          display: flex;
+          align-items: center;
+          margin-left: 4px;
+          gap: 8px;
+          padding-bottom: 48px;
+          font-size: 16px;
+          font-weight: 400;
+
+          .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: green;
+          }
+        }
+
+        .social {
+          a {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+
+      .wrapper_right {
+        position: relative;
+        z-index: 5;
+        .background {
+          position: absolute;
+          z-index: -1;
+          top: 40px;
+          right: 0px;
+        }
+
+        .frontend {
+          transition: all 0.7s ease-in-out;
+          position: absolute;
+          top: 0;
+          right: 40px;
+          &:hover {
+            transform: translateX(40px) translateY(40px) scale(0.97);
+          }
+        }
+
         
-        }
+          
+        
+      }
     }
+  }
 }
 
-@media (prefers-color-scheme: dark){
-    
-    #intro{
-    
-        h1, p, i, h6{ 
-            color: #fff;
+@media (prefers-color-scheme: dark) {
+  #intro {
+
+    .frontend {
+      transition: all 0.7s ease-in-out;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      box-shadow: 40px 40px grey;
+      &:hover {
+        box-shadow: 0px 0px gray;
+        transform: translateX(40px) translateY(40px) scale(0.97);
+      }
     }
 
-    .wrapper_right{
-        .dark{
-            display: block;
-        }
+    h1,
+    p,
+    i,
+    h6 {
+      color: #fff;
     }
-
-    }
-
+  }
 }
-
-

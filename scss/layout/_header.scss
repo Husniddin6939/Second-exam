@@ -32,6 +32,10 @@ header{
                 font-size: 16px;
                 font-weight: 500;
                 color: gray;
+
+                &:hover{
+                   color: #030712;
+                }
             }
 
             div{
@@ -47,16 +51,35 @@ header{
                     border: none;
                     background-color: black;
                     color: #fff;
+                    cursor: pointer;
+
+                    &:hover{
+                        opacity:0.8;
+
+                    }
                 }
+
+                
             }
+        }
+
+        .toggle_menu{
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            display: none;
+
         }
     }
 
-    .toggle_menu{
-        display: none;
-    }
+    
 
     .sidebar{
+        // display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        align-items: end;
+        width:200px;
         display: none;
 
     }
@@ -67,16 +90,45 @@ header{
         background-color: #030712;
         .nav{
             a{
-
                 color: #fff;
             }
-            button{
-                background: #111827;
+            ul{
+                a{
 
+                    color: grey;
+                    
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                button{
+                    background: #111827;
+    
+                }
             }
         }
     }
 
 }
 
-@media only screen and (max-width:)
+@media only screen and (max-width: 576px){
+    
+    header {
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul {
+                display: none;
+            }
+            .toggle_menu{
+                display: flex;
+            }
+        }
+
+        
+    }
+
+    
+}

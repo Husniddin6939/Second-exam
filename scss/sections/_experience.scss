@@ -27,10 +27,16 @@
     }
   }
   .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 48px;
+    place-content: center;
+
+
+
+    
     
     .card{
         padding:32px;
